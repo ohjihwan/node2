@@ -15,8 +15,8 @@
 	document.getElementById('loginBtn').addEventListener('click', () => {
 		const userid = document.getElementById('userid').value
 		const userpw = document.getElementById('userpw').value
-		// http://127.0.0.1:3000/login?userid=apple&userpw=1234
-		fetch(`http://127.0.0.1:3000/login?userid=${userid}&userpw=${userpw}`)
+		// fetch(`http://127.0.0.1:3000/login?userid=${userid}&userpw=${userpw}`)
+		fetch(`https://port-0-node2-m9v1ydei2962796e.sel4.cloudtype.app/result.html?userid=${userid}&userpw=${userpw}`)
 			.then((res) => res.text())
 			.then((data) => {
 				console.log('서버 응답: ' + data);
